@@ -1,0 +1,83 @@
+.navbar {
+    background: $color_strong;
+    .navbar__grid {
+        .navbar__left {
+            .list-category-left {
+                position: relative;
+                .item-left {
+                    padding-left: 45px;
+                }
+                .icon-bar {
+                    position: absolute;
+                    height: 2px;
+                    left: 0;
+                    width: 24px;
+                    background-color: $color_while;
+                    z-index: 100;
+                    -webkit-transition: all 0.4s ease;
+                    -o-transition: all 0.4s ease;
+                    transition: all 0.4s ease;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &:after,
+                &:before {
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    left: 0;
+                    top: 14px;
+                    width: 30px;
+                    background-color: $color_while;
+                    z-index: 100;
+                    -webkit-transition: all 0.4s ease;
+                    -o-transition: all 0.4s ease;
+                    transition: all 0.4s ease;
+                }
+                &:before {
+                    top: 35px;
+                }
+            }
+            .navbar__responsive {
+                position: absolute;
+                top: 50px;
+                background: $color_while;
+                width: 200px;
+                height: auto;
+                z-index: 200;
+                border: 1px solid $color_333;
+                border-top: none;
+                border-radius: 2px;
+                display: none;
+                ul {
+                    li {
+                        display: block;
+                        a {
+                            color: $color_text;
+                        }
+                        &:hover {
+                            background: $color_strong;
+                        }
+                    }
+                }
+            }
+        }
+        .navbar__right {
+            text-align: right;
+        }
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 18px 0;
+            text-transform: uppercase;
+            padding-left: 56px;
+            a {
+                font-family: 'Poppins-SemiBold';
+                font-size: 14px;
+                color: $color_while;
+                text-decoration: none;
+                outline: none;
+            }
+        }
+    }
+}

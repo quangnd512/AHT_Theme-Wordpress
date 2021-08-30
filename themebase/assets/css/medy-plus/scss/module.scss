@@ -1,0 +1,24 @@
+// lib
+@import "./lib/_all.min.css";
+@import "./lib/slick.scss";
+@import "./lib/slick-theme.scss";
+// base 
+@import "_reset.scss";
+@import "_base.scss";
+//less
+// 1. Header 
+@import "./source/_header.scss";
+// 2. Main
+@import "./source/_article.scss";
+@import "./source/_brands.scss";
+@import "./source/_carousel.scss";
+@import "./source/_sidebar.scss";
+@import "./source/_navbar.scss";
+@import "./source/_news.scss";
+@import "./source/_newsletter.scss";
+@import "./source/_product.scss";
+// 3. Footer
+@import "./source/_footers-top.scss";
+@import "./source/_footers-bottom.scss";
+// responsive
+@import "_resposive.scss";

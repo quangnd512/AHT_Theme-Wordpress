@@ -1,0 +1,36 @@
+.footers__bottom {
+    padding: 13px 0;
+    .footer-copyright {
+        .copyright-text {
+            padding: 16px 0;
+            font-size: 12px;
+            color: $color_text-p;
+            @include text_medium;
+            text-align: left;
+            span {
+                color: $color_strong;
+            }
+            @media (max-width: 767px) {
+                text-align: center;
+            }
+            @media (max-width: 845px) {
+                line-height: 14px;
+                padding-top: 5px;
+            }
+        }
+        .payments__icon {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            @media (max-width: 767px) {
+                justify-content: center;
+            }
+            div {
+                padding-left: 31px;
+                @media (max-width: 767px) {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}

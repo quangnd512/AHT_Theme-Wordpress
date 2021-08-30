@@ -1,0 +1,91 @@
+.footers__top {
+    background: $color_f2;
+    padding: 60px 0 35px;
+    .footers__top__grid {
+        h2 {
+            color: $color_text;
+            @include text_semi-bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding-bottom: 22px;
+            @media (max-width: 767px) {
+                text-align: center;
+            }
+        }
+        ul {
+            max-width: 280px;
+            @media (max-width: 767px) {
+                max-width: unset;
+            }
+            li {
+                padding-bottom: 23px;
+                @media (max-width: 767px) {
+                    text-align: center;
+                }
+                a {
+                    color: $color_text-p;
+                    font-size: 13px;
+                    text-decoration: none;
+                    @include text_medium;
+                    img {
+                        padding-right: 24px;
+                    }
+                    &:hover {
+                        color: $color_strong;
+                    }
+                }
+            }
+        }
+        .footer__contact {
+            ul {
+                max-width: 280px;
+                @media (max-width: 767px) {
+                    max-width: 280px;
+                }
+                @media (max-width: 575px) {
+                    max-width: 221px;
+                    margin: 0 auto;
+                }
+                li {
+                    padding-bottom: 11px;
+                    position: relative;
+                    @media (max-width: 767px) {
+                        text-align: left;
+                    }
+                    a {
+                        .contact__sub {
+                            padding-left: 36px;
+                            line-height: 19px;
+                        }
+                        img {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                }
+                .social__media {
+                    padding-top: 28px;
+                    a {
+                        padding-right: 23px;
+                        .fa-facebook-f:hover {
+                            color: $color_3b5998;
+                        }
+                        .fa-twitter:hover {
+                            color: $color_00a;
+                        }
+                        #svg_google {
+                            fill: $color_text-p;
+                            &:hover {
+                                fill: $color_google;
+                            }
+                        }
+                        .fa-instagram:hover {
+                            color: $color_instagram;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

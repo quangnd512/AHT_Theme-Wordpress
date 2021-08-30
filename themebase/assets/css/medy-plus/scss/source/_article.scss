@@ -1,0 +1,36 @@
+.article {
+    .article-grid {
+        padding: 62px 15px;
+        .article__card {
+            display: flex;
+            width: 100%;
+            img {
+                max-width: 43px;
+            }
+            .article__content {
+                padding-left: 20px;
+                width: 88%;
+                h4 {
+                    font-family: 'Poppins-Medium';
+                    font-size: 16px;
+                    color: $color_text;
+                    max-width: 219px;
+                    max-height: 17px;
+                    overflow: hidden;
+                }
+                p {
+                    font-family: 'Poppins-Regular';
+                    font-size: 14px;
+                    color: $color_text-p;
+                    max-width: 219px;
+                    max-height: 50px;
+                    padding-top: 8px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+    .article-payment {
+        padding-left: 22px;
+    }
+}

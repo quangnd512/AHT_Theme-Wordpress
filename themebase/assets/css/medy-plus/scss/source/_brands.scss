@@ -1,0 +1,18 @@
+.brands {
+    .brands__grid {
+        padding: 57px 0;
+        .brand__items {
+            .brand__item {
+                width: 20%;
+                box-sizing: border-box;
+                padding: 0 15px;
+                .item {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

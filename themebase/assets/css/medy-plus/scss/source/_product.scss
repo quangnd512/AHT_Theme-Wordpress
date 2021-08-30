@@ -1,0 +1,93 @@
+.product {
+    padding-top: 45px;
+    .product__grid {
+        .product__title {
+            position: relative;
+            margin-bottom: 45px;
+            h3 {
+                font-size: 90px;
+                font-family: 'Poppins-SemiBold';
+                color: $color_f5;
+            }
+            h4 {
+                font-size: 42px;
+                font-family: 'Poppins-SemiBold';
+                color: $color_text;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                text-transform: uppercase;
+            }
+            .arrow-product {
+                position: absolute;
+                top: 52%;
+                right: -16px;
+                transform: translateY(-50%);
+                .arrow-left, 
+                .arrow-right {
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    svg {
+                        &:hover {
+                            fill: $color_strong;
+                        }
+                    }
+                }
+                i {
+                    font-size: 32px;
+                }
+            }
+        }
+        .product__item {
+            margin-left: -15px;
+            .product__info {
+                padding-right: 0;
+                padding-left: 30px;
+                margin-left: -7px;
+                .item {
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .item__content {
+                        display: block;
+                        width: 100%;
+                        margin: 0 auto;
+                        text-align: center;
+                        padding: 20px 32px 25px;
+                        line-height: 1.6;
+                        h4 {
+                            font-family: 'Poppins-SemiBold';
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            padding-bottom: 6px;
+                            font-weight: bold;
+                            text-align: center;
+                            overflow: hidden;
+                            height: 50px;
+                            a {
+                                text-decoration: none;
+                                color: $color_text;
+                            }
+                            .old-price {
+                                color: $color_69;
+                                text-decoration: line-through;
+                                padding-right: 13px;
+                                display: none;
+                            }
+                            .old-price.active {
+                                display: inline-block;
+                            }
+                            span {
+                                color: $color_strong;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

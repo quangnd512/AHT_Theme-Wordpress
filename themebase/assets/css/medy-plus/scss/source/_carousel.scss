@@ -1,0 +1,93 @@
+.carousels {
+    position: relative;
+    .carousel__arrows {
+        position: absolute;
+        top: 50%;
+        z-index: 100;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        left: 0;
+        right: 0;
+        .carousel__arrows--left {
+            border-top: 56px solid $color_while;
+            border-right: 10px solid transparent;
+            height: 0;
+            margin-left: 20px;
+            width: 60px;
+            .fa-chevron-left:before {
+                position: absolute;
+                top: 14px;
+                font-size: 26px;
+                left: 39px;
+            }
+            &:hover {
+                border-top: 56px solid $color_strong;
+            }
+        }
+        .carousel__arrows--right {
+            border-bottom: 56px solid $color_while;
+            border-left: 10px solid transparent;
+            height: 0;
+            margin-right: 20px;
+            width: 60px;
+            .fa-chevron-right:before {
+                position: absolute;
+                top: 14px;
+                font-size: 26px;
+                right: 39px;
+            }
+            &:hover {
+                border-bottom: 56px solid $color_strong;
+            }
+        }
+    }
+    .carousel__wapper {
+        .carousel__grid {
+            a {
+                text-decoration: none;
+            }
+            width: 100%;
+            position: relative;
+            .carousel__content {
+                position: absolute;
+                left: 25%;
+                top: 48%;
+                transform: translate(-14%, -49%);
+                max-width: 683px;
+                h2 {
+                    font-size: 70px;
+                    font-family: 'Poppins-Medium';
+                    line-height: 90px;
+                    color: $color_text;
+                    letter-spacing: 1px;
+                    padding-bottom: 20px;
+                    .carousel__content--note {
+                        color: $color_strong;
+                        font-family: 'Poppins-SemiBold';
+                        letter-spacing: 0px;
+                    }
+                }
+                p {
+                    font-family: 'Poppins-Light';
+                    color: $color_text-p;
+                    font-size: 18px;
+                    padding-bottom: 55px;
+                    padding-left: 8px;
+                }
+                a {
+                    font-family: 'Poppins-SemiBold';
+                    font-size: 16px;
+                    color: $color_text;
+                    border-bottom: 2px solid $color_strong;
+                    padding-bottom: 6px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+    .slick-slide img {
+        width: 100%;
+    }
+}

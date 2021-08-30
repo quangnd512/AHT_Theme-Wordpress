@@ -1,0 +1,53 @@
+.newsletters {
+    background: $color_background-newsletter;
+    .newsletter__grid {
+        padding: 100px 0;
+        .newsletter__sign {
+            text-align: center;
+            .newsletter__title {
+                font-family: 'Poppins-SemiBold';
+                color: $color_while;
+                font-size: 32px;
+                h4{
+                    letter-spacing: -0.4px;
+                }
+                p {
+                    padding-top: 20px;
+                    padding-bottom: 64px;
+                    font-family: 'Poppins-Medium';
+                    font-size: 14px;
+                }
+            }
+            .newsletter__btn {
+                max-width: 774px;
+                margin: 0 auto;
+                position: relative;
+                input {
+                    width: 100%;
+                    padding: 25px 0;
+                    border-radius: 50px;
+                    border: none;
+                    padding-left: 33px;
+                    color: $color_text-p;
+                    font-size: 13px;
+                    font-family: 'Poppins-Regular';
+                    padding-right: 178px;
+                }
+                button {
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    bottom: 5px;
+                    padding: 0 53px;
+                    border-radius: 50px;
+                    background: $color_strong;
+                    border: none;
+                    color: $color_while;
+                    text-transform: uppercase;
+                    font-family: 'Poppins-Medium';
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
